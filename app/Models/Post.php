@@ -10,9 +10,7 @@ class Post extends Model
     use HasFactory;
  protected $guarded = [];
 
-//    public static function latest()
-//    {
-//    }
+ protected $with = ["category","author"];
 
     public function category()
  {
